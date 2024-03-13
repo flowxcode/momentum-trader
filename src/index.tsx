@@ -11,5 +11,5 @@ root.render(
     <App />
     <SMATrader period={20} />{" "}
     {/* Use the SMATrader component with a specified period */}
-  </React.StrictMode>
+  </React.StrictMode>,
 );

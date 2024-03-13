@@ -13,7 +13,7 @@ const SMATrader: React.FC<ISMATraderProps> = ({ period }) => {
   const generateRandomData = (num: number): number[] => {
     return Array.from(
       { length: num },
-      () => Math.floor(Math.random() * 100) + 1
+      () => Math.floor(Math.random() * 100) + 1,
     );
   };
 
@@ -25,7 +25,7 @@ const SMATrader: React.FC<ISMATraderProps> = ({ period }) => {
 
   // Generate signals based on SMA
   const tradeSMA = () => {
-    const priceData = generateRandomData(40); // Generate 100(40 test) random prices
+    const priceData = generateRandomData(44); // Generate 100(40 4 test) random prices
     const signals: Signal[] = [];
 
     for (let i = period; i < priceData.length; i++) {
